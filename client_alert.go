@@ -239,8 +239,9 @@ type AlertConfiguration struct {
 	Labels                 []*Tag                   `json:"labels"`
 	SeverityConfigurations []*SeverityConfiguration `json:"severityConfigurations"`
 
-	JoinConfigurations []*JoinConfiguration `json:"joinConfigurations"`
-	GroupConfiguration GroupConfiguration   `json:"groupConfiguration"`
+	ConditionConfiguration ConditionConfiguration `json:"conditionConfiguration"`
+	JoinConfigurations     []*JoinConfiguration   `json:"joinConfigurations"`
+	GroupConfiguration     GroupConfiguration     `json:"groupConfiguration"`
 
 	PolicyConfiguration PolicyConfiguration          `json:"policyConfiguration"`
 	AutoAnnotation      bool                         `json:"autoAnnotation"`
